@@ -341,6 +341,7 @@
         }
 
         // if all questions are answered, then enable the submit button
+        submit_btn.disabled = true;
         var are_all_questions_answered = true;
         for (var i = 0; i < mini_question_bank.length; i = i + 1) {
             if (mini_question_bank[i].given_answer == "X") {
